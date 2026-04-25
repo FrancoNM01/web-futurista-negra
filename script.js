@@ -1,37 +1,37 @@
 const contentByTab = {
   servicios: {
-    kicker: "Servicios",
-    title: "Promociona lo que haces y convierte visitas en consultas.",
-    text: "Ideal para profesionales, estudios, consultores, tecnicos, estetica, salud, educacion y marcas personales.",
-    cta: "Comprar una web de servicios",
+    kicker: "Mas consultas",
+    title: "Mostra lo que haces y lleva a tus clientes directo a WhatsApp.",
+    text: "Ideal para negocios locales, profesionales, estetica, servicios, cursos, tecnicos y marcas personales.",
+    cta: "Pedir mi pagina",
     image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
   },
   tienda: {
-    kicker: "Tienda online",
-    title: "Vende productos con catalogo, carrito, pagos y envios.",
-    text: "Perfecta para marcas, locales, lanzamientos, productos digitales y negocios que quieren cobrar online.",
-    cta: "Comprar una tienda online",
+    kicker: "Vender online",
+    title: "Mostra tus productos y facilita que te pidan por WhatsApp.",
+    text: "Perfecta para marcas, locales, productos digitales y negocios que quieren vender sin complicarse.",
+    cta: "Cotizar tienda",
     image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&q=80",
   },
   reservas: {
-    kicker: "Reservas",
-    title: "Permite que tus clientes pidan turno sin escribirte de mas.",
-    text: "Ideal para estetica, bienestar, fotografos, entrenadores, clinicas y servicios por agenda.",
-    cta: "Comprar web con reservas",
+    kicker: "Tomar reservas",
+    title: "Hace que tus clientes puedan pedir turno de forma simple.",
+    text: "Ideal para estetica, barberias, bienestar, fotografos, entrenadores y servicios por agenda.",
+    cta: "Pedir web con turnos",
     image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=80",
   },
   portfolio: {
-    kicker: "Portafolio",
-    title: "Muestra tu trabajo con una presencia visual clara y memorable.",
-    text: "Pensada para diseñadores, artistas, arquitectos, creadores, estudios y profesionales visuales.",
-    cta: "Comprar portfolio",
+    kicker: "Mostrar trabajos",
+    title: "Transforma tus trabajos en prueba de confianza para vender mas.",
+    text: "Pensada para barberias, estetica, construccion, arquitectura, diseno, fotografia y servicios visuales.",
+    cta: "Quiero mostrar trabajos",
     image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80",
   },
   blog: {
-    kicker: "Blog",
-    title: "Publica contenido, gana autoridad y atrae visitas desde Google.",
-    text: "Una buena opcion para proyectos educativos, medios, marcas personales y negocios con contenido frecuente.",
-    cta: "Comprar web con blog",
+    kicker: "Generar confianza",
+    title: "Responde dudas antes de que el cliente te escriba.",
+    text: "Sumamos beneficios, preguntas frecuentes, reseñas y textos claros para que tu negocio se vea serio.",
+    cta: "Quiero generar confianza",
     image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
   },
 };
@@ -121,7 +121,7 @@ document.querySelectorAll(".faq-item button").forEach((button) => {
 
 document.querySelector(".buy-form")?.addEventListener("submit", (event) => {
   event.preventDefault();
-  document.querySelector("[data-form-state]").textContent = "Solicitud recibida. Te contactamos para cerrar detalles.";
+  document.querySelector("[data-form-state]").textContent = "Solicitud recibida. Te contactamos con precio, tiempos y proximos pasos.";
 });
 
 const pointerGlow = document.createElement("div");
