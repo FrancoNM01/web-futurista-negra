@@ -121,7 +121,19 @@ document.querySelectorAll(".faq-item button").forEach((button) => {
 
 document.querySelector(".buy-form")?.addEventListener("submit", (event) => {
   event.preventDefault();
-  document.querySelector("[data-form-state]").textContent = "Solicitud recibida. Te contactamos con precio, tiempos y proximos pasos.";
+  const form = event.currentTarget;
+  const name = form.querySelector('input[placeholder="Nombre"]').value.trim();
+  const contact = form.querySelector('input[placeholder="WhatsApp o email"]').value.trim();
+  const type = form.querySelector("select").value;
+  const message = [
+    "Hola, quiero una pagina web.",
+    name ? `Mi nombre es ${name}.` : "",
+    contact ? `Mi contacto es ${contact}.` : "",
+    `Estoy interesado en: ${type}.`,
+  ].filter(Boolean).join(" ");
+
+  document.querySelector("[data-form-state]").textContent = "Te abrimos WhatsApp para enviar la consulta.";
+  window.open(`https://wa.me/543517714398?text=${encodeURIComponent(message)}`, "_blank", "noopener");
 });
 
 const pointerGlow = document.createElement("div");

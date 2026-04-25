@@ -833,6 +833,18 @@ select {
   font-weight: 700;
 }
 
+.contact-link,
+.footer-mail {
+  width: fit-content;
+  color: var(--violet-soft);
+  font-weight: 900;
+}
+
+.contact-link {
+  margin-top: 2px;
+  font-size: 0.92rem;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
