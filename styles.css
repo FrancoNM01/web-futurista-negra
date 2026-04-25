@@ -816,7 +816,8 @@ select {
 }
 
 .buy-form input,
-.buy-form select {
+.buy-form select,
+.buy-form textarea {
   min-height: 52px;
   padding: 0 14px;
   border: 1px solid var(--line);
@@ -824,7 +825,14 @@ select {
   color: var(--white);
 }
 
-.buy-form input::placeholder {
+.buy-form textarea {
+  min-height: 104px;
+  padding-top: 14px;
+  resize: vertical;
+}
+
+.buy-form input::placeholder,
+.buy-form textarea::placeholder {
   color: #7f8aa3;
 }
 

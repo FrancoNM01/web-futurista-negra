@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260425-contacto">
+  <link rel="stylesheet" href="styles.css?v=20260425-formspree">
 </head>
 <body>
   <header class="topbar">
@@ -260,16 +260,18 @@
         <p class="small-label">Comienza ahora</p>
         <h2>Hablemos por WhatsApp y armemos tu pagina.</h2>
       </div>
-      <form class="buy-form reveal">
+      <form class="buy-form reveal" action="https://formspree.io/f/mbdqwbwj" method="POST">
         <input type="text" placeholder="Nombre" required>
-        <input type="text" placeholder="WhatsApp o email" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
         <select>
           <option>Quiero una landing</option>
           <option>Quiero una web profesional</option>
           <option>Quiero una tienda online</option>
         </select>
-        <button class="button dark" type="submit">Quiero mi pagina</button>
-        <small data-form-state>Te respondemos con precio, tiempos y proximos pasos.</small>
+        <textarea name="mensaje" placeholder="Contame brevemente que necesitas"></textarea>
+        <button class="button dark" type="submit">Enviar consulta</button>
+        <small data-form-state>La consulta llega a nuestro correo. Tambien podes escribir por WhatsApp.</small>
         <a class="contact-link" href="mailto:franconievas2a@gmail.com?subject=Quiero%20una%20pagina%20web">O escribime por mail</a>
       </form>
     </section>
@@ -286,6 +288,6 @@
 
   <a class="whatsapp-float" href="https://wa.me/543517714398?text=Hola%2C%20quiero%20hacer%20una%20pagina%20web" target="_blank" rel="noopener" aria-label="Hablar por WhatsApp">WhatsApp</a>
 
-  <script src="script.js?v=20260425-contacto"></script>
+  <script src="script.js?v=20260425-formspree"></script>
 </body>
 </html>
