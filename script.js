@@ -131,3 +131,19 @@ document.body.appendChild(pointerGlow);
 window.addEventListener("pointermove", (event) => {
   pointerGlow.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
 });
+
+const footer = document.querySelector(".footer");
+const whatsappFloat = document.querySelector(".whatsapp-float");
+
+if (footer && whatsappFloat) {
+  const footerObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        whatsappFloat.classList.toggle("is-hidden", entry.isIntersecting);
+      });
+    },
+    { threshold: 0.08 }
+  );
+
+  footerObserver.observe(footer);
+}
