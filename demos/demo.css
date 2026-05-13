@@ -462,11 +462,13 @@ h1 {
 }
 
 .shop-hero h1 {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 0 18px;
-  font-size: clamp(2.8rem, 5.8vw, 5.8rem);
+  font-size: clamp(3rem, 5.6vw, 5.9rem);
   line-height: .98;
-  text-wrap: balance;
+  text-wrap: normal;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .shop-hero p {
