@@ -169,12 +169,14 @@ select {
   margin: 0;
   font-weight: 900;
   letter-spacing: 0;
-  line-height: 0.87;
+  line-height: 0.96;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
 }
 
 .hero h1 {
   max-width: 860px;
-  font-size: clamp(3.5rem, 7.8vw, 8.7rem);
+  font-size: clamp(3.4rem, 7.2vw, 7.8rem);
   background: linear-gradient(180deg, #ffffff 0%, #d8cffd 48%, #8d5cff 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -420,7 +422,7 @@ select {
 .section-title h2,
 .ai-copy h2,
 .final-cta h2 {
-  font-size: clamp(3.2rem, 7vw, 7.4rem);
+  font-size: clamp(2.8rem, 6.1vw, 6.4rem);
 }
 
 .business-layout {
@@ -481,8 +483,9 @@ select {
 .business-panel h3 {
   max-width: 620px;
   margin: 0;
-  font-size: clamp(2rem, 4vw, 4.8rem);
-  line-height: 0.95;
+  font-size: clamp(2rem, 3.6vw, 4.2rem);
+  line-height: 1;
+  text-wrap: balance;
 }
 
 .business-panel p:not(.panel-kicker) {
@@ -828,7 +831,7 @@ select {
 
 .final-cta h2 {
   max-width: 820px;
-  line-height: 1.02;
+  line-height: 1.08;
 }
 
 .buy-form {
@@ -1048,7 +1051,8 @@ main,
   }
 
   .hero h1 {
-    font-size: clamp(3.2rem, 16vw, 5.8rem);
+    font-size: clamp(3rem, 13.5vw, 5.2rem);
+    line-height: 1;
   }
 
   .hero-stage {
@@ -1085,7 +1089,8 @@ main,
   .section-title h2,
   .ai-copy h2,
   .final-cta h2 {
-    font-size: clamp(3rem, 14vw, 5rem);
+    font-size: clamp(2.7rem, 12vw, 4.6rem);
+    line-height: 1.02;
   }
 
   .business-panel {

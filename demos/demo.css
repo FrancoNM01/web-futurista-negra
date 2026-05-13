@@ -103,9 +103,11 @@ p {
 h1 {
   max-width: 830px;
   margin-bottom: 24px;
-  font-size: clamp(3.6rem, 8vw, 8.2rem);
-  line-height: .88;
+  font-size: clamp(3.4rem, 7.2vw, 7.4rem);
+  line-height: .96;
   letter-spacing: 0;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
 }
 
 .lead {
@@ -169,8 +171,10 @@ h1 {
 }
 
 .section-title h2 {
-  font-size: clamp(2.4rem, 5vw, 5rem);
-  line-height: .95;
+  font-size: clamp(2.3rem, 4.6vw, 4.6rem);
+  line-height: 1;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
 }
 
 .grid-3 {
@@ -305,7 +309,8 @@ h1 {
 
 .barber-demo h1 {
   text-transform: uppercase;
-  font-size: clamp(3.2rem, 7.2vw, 7.6rem);
+  font-size: clamp(3rem, 6.4vw, 6.8rem);
+  line-height: .98;
 }
 
 .barber-demo .demo-hero {
@@ -436,8 +441,9 @@ h1 {
 .shop-hero h1 {
   max-width: 720px;
   margin: 0 0 18px;
-  font-size: clamp(3rem, 6.5vw, 6.8rem);
-  line-height: .88;
+  font-size: clamp(2.8rem, 5.8vw, 5.8rem);
+  line-height: .98;
+  text-wrap: balance;
 }
 
 .shop-hero p {
@@ -535,8 +541,9 @@ h1 {
 
 .results-head h2 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 4rem);
-  line-height: .95;
+  font-size: clamp(1.9rem, 3.4vw, 3.4rem);
+  line-height: 1;
+  text-wrap: balance;
 }
 
 .results-head span {
@@ -636,8 +643,9 @@ h1 {
 .shop-bottom h2 {
   max-width: 780px;
   margin: 0;
-  font-size: clamp(2.2rem, 5vw, 5rem);
-  line-height: .95;
+  font-size: clamp(2.1rem, 4.5vw, 4.4rem);
+  line-height: 1;
+  text-wrap: balance;
 }
 
 .shop-bottom .shop-primary {
@@ -733,8 +741,8 @@ h1 {
 .splash-logo h1 {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(4rem, 8vw, 8rem);
-  line-height: .86;
+  font-size: clamp(3.6rem, 7vw, 7rem);
+  line-height: .94;
   color: #1b120d;
 }
 
@@ -909,7 +917,8 @@ h1 {
 
 .restaurant-split h2 {
   color: #f4eadc;
-  font-size: clamp(2rem, 3.4vw, 4rem);
+  font-size: clamp(2rem, 3.2vw, 3.6rem);
+  line-height: 1;
 }
 
 .restaurant-final {
@@ -1010,8 +1019,9 @@ h1 {
   max-width: 760px;
   margin: 0;
   color: #22313a;
-  font-size: clamp(3rem, 6.2vw, 6.6rem);
-  line-height: .92;
+  font-size: clamp(2.9rem, 5.7vw, 5.9rem);
+  line-height: .98;
+  text-wrap: balance;
 }
 
 .modular-hero p {
@@ -1101,8 +1111,9 @@ h1 {
 .modular-contact h2 {
   margin: 0;
   color: #22313a;
-  font-size: clamp(2.6rem, 5vw, 5.5rem);
-  line-height: .95;
+  font-size: clamp(2.4rem, 4.6vw, 4.8rem);
+  line-height: 1;
+  text-wrap: balance;
 }
 
 .modular-portfolio {
@@ -1292,6 +1303,7 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(3.2rem, 14vw, 5.8rem);
+    font-size: clamp(2.9rem, 12vw, 5rem);
+    line-height: 1;
   }
 }
