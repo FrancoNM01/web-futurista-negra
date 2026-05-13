@@ -780,7 +780,8 @@ h1 {
   display: flex;
   gap: 36px;
   padding: 20px 0;
-  animation: marquee 22s linear infinite;
+  will-change: transform;
+  animation: restaurantMarquee 18s linear infinite;
 }
 
 .restaurant-marquee span {
@@ -788,6 +789,16 @@ h1 {
   font-weight: 900;
   white-space: nowrap;
   text-transform: uppercase;
+}
+
+@keyframes restaurantMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 18px));
+  }
 }
 
 .caravan-style .section {
