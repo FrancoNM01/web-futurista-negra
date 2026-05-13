@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Tienda Barbería | PAGEONE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body class="barber-shop-demo">
+  <header class="shop-top">
+    <div class="shop-topline">
+      <span>Envios a todo el pais</span>
+      <span>Atencion por WhatsApp</span>
+      <span>Catalogo para profesionales</span>
+    </div>
+    <div class="shop-header">
+      <a class="shop-logo" href="../index.html">TODO BARBER</a>
+      <form class="shop-search">
+        <input type="search" placeholder="Buscar maquinas, navajas, capas, ceras...">
+        <button type="button">Buscar</button>
+      </form>
+      <a class="shop-cart" href="https://wa.me/543517714398?text=Hola%2C%20quiero%20cotizar%20una%20tienda%20de%20productos%20para%20barberia" target="_blank" rel="noopener">Carrito 0</a>
+    </div>
+    <nav class="shop-menu">
+      <a href="#maquinas">Maquinas</a>
+      <a href="#barba">Barba</a>
+      <a href="#mobiliario">Mobiliario</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#marcas">Marcas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <div>
+        <p class="shop-kicker">Demo real tienda ecommerce</p>
+        <h1>Todo para barberías y peluquerías.</h1>
+        <p>Un catálogo online con categorías, buscador, productos, precios, ofertas y pedido por WhatsApp.</p>
+        <div class="shop-actions">
+          <a class="shop-primary" href="https://wa.me/543517714398?text=Hola%2C%20quiero%20una%20tienda%20online%20tipo%20catalogo%20de%20barberia" target="_blank" rel="noopener">Quiero una tienda así</a>
+          <a class="shop-secondary" href="../index.html#precios">Volver a planes</a>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1000&q=80" alt="Herramientas de barberia">
+    </section>
+
+    <section class="shop-categories">
+      <a href="#maquinas">Maquinas y patilleras</a>
+      <a href="#barba">Barba y afeitado</a>
+      <a href="#mobiliario">Sillones y muebles</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#insumos">Insumos</a>
+      <a href="#capas">Capas y accesorios</a>
+    </section>
+
+    <section class="shop-layout" id="maquinas">
+      <aside class="shop-sidebar">
+        <h2>Categorías</h2>
+        <a href="#maquinas">Maquinas</a>
+        <a href="#barba">Tratamientos barba</a>
+        <a href="#mobiliario">Mobiliario</a>
+        <a href="#insumos">Insumos</a>
+        <a href="#ofertas">Ofertas</a>
+        <h2>Filtrar por precio</h2>
+        <label><input type="checkbox"> Hasta $50.000</label>
+        <label><input type="checkbox"> $50.000 a $150.000</label>
+        <label><input type="checkbox"> Profesional</label>
+      </aside>
+
+      <section class="shop-results">
+        <div class="results-head">
+          <div>
+            <p class="shop-kicker">Productos destacados</p>
+            <h2>Catalogo con precios y consulta rápida.</h2>
+          </div>
+          <span>Viendo 1-8 de 124 productos</span>
+        </div>
+
+        <div class="product-grid dense">
+          <article class="store-product">
+            <span class="badge">Oferta</span>
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=80" alt="Maquina de corte">
+            <h3>Maquina fade profesional</h3>
+            <p>Motor potente, cuchilla ajustable.</p>
+            <strong>$89.900</strong>
+            <a href="https://wa.me/543517714398?text=Hola%2C%20quiero%20consultar%20por%20maquina%20fade%20profesional" target="_blank" rel="noopener">Consultar</a>
+          </article>
+          <article class="store-product">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=700&q=80" alt="Navaja barberia">
+            <h3>Navaja acero negro</h3>
+            <p>Para perfilado y terminaciones.</p>
+            <strong>$18.400</strong>
+            <a href="https://wa.me/543517714398?text=Hola%2C%20quiero%20consultar%20por%20navaja%20de%20barberia" target="_blank" rel="noopener">Consultar</a>
+          </article>
+          <article class="store-product" id="barba">
+            <span class="badge">Nuevo</span>
+            <img src="https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=700&q=80" alt="Aceite para barba">
+            <h3>Aceite para barba 30ml</h3>
+            <p>Hidratacion y brillo profesional.</p>
+            <strong>$12.800</strong>
+            <a href="https://wa.me/543517714398?text=Hola%2C%20quiero%20consultar%20por%20aceite%20para%20barba" target="_blank" rel="noopener">Consultar</a>
+          </article>
+          <article class="store-product" id="mobiliario">
+            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=80" alt="Sillon barberia">
+            <h3>Sillon barber premium</h3>
+            <p>Base reforzada, estilo clásico.</p>
+            <strong>$520.000</strong>
+            <a href="https://wa.me/543517714398?text=Hola%2C%20quiero%20consultar%20por%20sillon%20barber" target="_blank" rel="noopener">Consultar</a>
+          </article>
+          <article class="store-product" id="insumos">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80" alt="Insumos peluqueria">
+            <h3>Kit capas + peines</h3>
+            <p>Pack inicial para barbería.</p>
+            <strong>$34.500</strong>
+            <a href="https://wa.me/543517714398?text=Hola%2C%20quiero%20consultar%20por%20kit%20barberia" target="_blank" rel="noopener">Consultar</a>
+          </article>
+          <article class="store-product">
+            <span class="badge">Top venta</span>
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=700&q=80" alt="Cera cabello">
+            <h3>Cera matte profesional</h3>
+            <p>Fijacion fuerte, acabado natural.</p>
+            <strong>$9.700</strong>
+            <a href="https://wa.me/543517714398?text=Hola%2C%20quiero%20consultar%20por%20cera%20matte" target="_blank" rel="noopener">Consultar</a>
+          </article>
+          <article class="store-product" id="capas">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=700&q=80" alt="Capa barberia">
+            <h3>Capa barber impermeable</h3>
+            <p>Diseño profesional, fácil limpieza.</p>
+            <strong>$16.200</strong>
+            <a href="https://wa.me/543517714398?text=Hola%2C%20quiero%20consultar%20por%20capa%20barber" target="_blank" rel="noopener">Consultar</a>
+          </article>
+          <article class="store-product" id="ofertas">
+            <span class="badge">Oferta</span>
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=700&q=80" alt="Secador profesional">
+            <h3>Secador profesional</h3>
+            <p>Alta potencia para peluquería.</p>
+            <strong>$76.000</strong>
+            <a href="https://wa.me/543517714398?text=Hola%2C%20quiero%20consultar%20por%20secador%20profesional" target="_blank" rel="noopener">Consultar</a>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class="brand-strip" id="marcas">
+      <span>Wahl</span>
+      <span>Babyliss</span>
+      <span>Sir Fausto</span>
+      <span>Andis</span>
+      <span>Stylecraft</span>
+    </section>
+
+    <section class="shop-bottom">
+      <div>
+        <p class="shop-kicker">Para este pack</p>
+        <h2>La demo muestra una tienda con catálogo real, filtros y productos.</h2>
+      </div>
+      <a class="shop-primary" href="https://wa.me/543517714398?text=Hola%2C%20quiero%20una%20tienda%20online%20tipo%20catalogo%20de%20barberia" target="_blank" rel="noopener">Quiero una tienda así</a>
+    </section>
+  </main>
+</body>
+</html>

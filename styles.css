@@ -648,10 +648,22 @@ select {
 
 .showcase-card p {
   margin: 0;
-  padding: 0 18px 20px;
+  padding: 0 18px 14px;
   color: var(--gray);
   font-weight: 700;
   line-height: 1.4;
+}
+
+.showcase-card a {
+  display: inline-grid;
+  place-items: center;
+  min-height: 44px;
+  margin: 0 18px 20px;
+  padding: 0 16px;
+  color: var(--white);
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.035);
+  font-weight: 900;
 }
 
 .steps {
@@ -733,8 +745,22 @@ select {
   font-weight: 700;
 }
 
-.price-card .button {
+.price-card .button,
+.plan-actions {
   margin-top: auto;
+}
+
+.plan-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.plan-actions .button {
+  min-height: 48px;
+  margin-top: 0;
+  padding: 0 14px;
+  text-align: center;
 }
 
 .faq {
@@ -926,11 +952,16 @@ select {
   transform: translateY(14px);
 }
 
-.topbar,
 main,
 .footer {
   position: relative;
   z-index: 1;
+}
+
+.topbar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 80;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1066,6 +1097,10 @@ main,
     grid-template-columns: 1fr;
     gap: 12px;
     padding: 24px 0;
+  }
+
+  .plan-actions {
+    grid-template-columns: 1fr;
   }
 
   .footer {
