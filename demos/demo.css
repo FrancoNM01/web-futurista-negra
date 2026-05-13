@@ -344,13 +344,36 @@ h1 {
 
 .barber-gallery {
   display: grid;
-  grid-template-columns: .8fr 1.35fr .85fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   align-items: stretch;
 }
 
+.barber-gallery .image-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.barber-gallery .image-card img {
+  height: clamp(260px, 28vw, 340px);
+  aspect-ratio: auto;
+}
+
+.barber-gallery .image-card div {
+  flex: 1;
+}
+
+.barber-gallery .image-card:nth-child(1) img {
+  object-position: center 45%;
+}
+
 .barber-gallery .image-card:nth-child(2) img {
-  aspect-ratio: 3 / 4;
+  object-position: center 42%;
+}
+
+.barber-gallery .image-card:nth-child(3) img {
+  object-position: center 50%;
 }
 
 .barber-shop-demo {
